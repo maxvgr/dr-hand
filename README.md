@@ -19,12 +19,12 @@
 
 Клонируем репозиторий себе на компьютер:
 ```sh
-git clone https://github.com/acr0matic/boilerplate
+git clone https://github.com/maxvgr/dr-hand.git
 ```
 
 Переходим в каталог с проектом:
 ```sh
-cd boilerplate
+cd dr-hand
 ```
 
 Установливаем все зависимости командой:
