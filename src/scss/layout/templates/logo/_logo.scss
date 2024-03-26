@@ -1,0 +1,26 @@
+.logo-wrapper {
+  display: flex;
+}
+
+.logo__text {
+  color: $color-text__blue;
+  font-size: $font__text--small;
+  line-height: 17.07px;
+  letter-spacing: 0.03em;
+
+  &-title {
+    padding: 10px 0 5px;
+    font-weight: $weight-Bold;
+    font-size: $font__text--big;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+  }
+}
+
+.logo {
+  img {
+    max-width: unset;
+    // height: auto;
+  }
+}

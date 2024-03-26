@@ -1,0 +1,38 @@
+// -----------------------------------------------------------------------------
+// В этом файле подключаются все шрифты через font-face, и задаются основные настройки типографики
+// -----------------------------------------------------------------------------
+
+// @include font-face("Roboto", "../assets/fonts/Roboto/Roboto-Light", 300);
+// @include font-face("Roboto", "../assets/fonts/Roboto/Roboto-Regular", 400);
+// @include font-face("Roboto", "../assets/fonts/Roboto/Roboto-Medium", 500);
+// @include font-face("Roboto", "../assets/fonts/Roboto/Roboto-Bold", 700);
+
+@include font-face("Montserrat", "../assets/fonts/Montserrat/Montserrat-Light", 300);
+@include font-face("Montserrat", "../assets/fonts/Montserrat/Montserrat-Regular", 400);
+@include font-face("Montserrat", "../assets/fonts/Montserrat/Montserrat-Medium", 500);
+@include font-face("Montserrat", "../assets/fonts/Montserrat/Montserrat-Bold", 700);
+
+@include font-face("HeliosExt", "../assets/fonts/HeliosExt/Heliosext-Regular", 400);
+@include font-face("HeliosExt", "../assets/fonts/HeliosExt/Heliosext-Bold", 700);
+
+$font-default: "Montserrat", sans-serif; // Семейство по умолчанию
+$font-title: "Montserrat", sans-serif; // Семейство по умолчанию
+
+/* Размеры заголовков */
+$font__title--large: 64px;
+$font__title--medium: 48px;
+$font__title--small: 36px;
+
+/* Размеры текста */
+$font__text--large: 24px;
+$font__text--big: 18px;
+$font__text--regular: 16px;
+$font__text--small: 14px;
+
+/* Межстрочные расстояния */
+$line-height--primary: 1.35;
+
+body {
+  font-size: $font__text--regular;
+  font-family: $font-default, sans-serif;
+}
