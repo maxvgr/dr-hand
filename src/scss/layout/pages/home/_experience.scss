@@ -1,0 +1,36 @@
+.experience {
+  &__title {
+    margin-top: 67px;
+    margin-bottom: 23px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49.44px;
+  }
+
+  &-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 51px;
+
+    p {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25.2px;
+
+      &::before {
+        content: "";
+        width: 43px;
+        height: 54px;
+        background-image: url("../assets/images/layout/experience/exp.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+      }
+    }
+  }
+}

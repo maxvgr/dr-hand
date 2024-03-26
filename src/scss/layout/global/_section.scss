@@ -4,10 +4,16 @@
 
 .section {
   &__header {
-
   }
 
   &__title {
+  }
 
+  .title-gradient {
+    background: linear-gradient(88.84deg, #00072c -3.58%, #007c7b 95.08%);
+    -webkit-background-clip: text;
+    font-weight: $weight-Bold;
+    font-family: $font-title;
+    -webkit-text-fill-color: transparent;
   }
 }
