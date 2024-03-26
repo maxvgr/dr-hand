@@ -1,2 +1,10 @@
 .button-primary {
+  // display: flex;
+
+  padding: 16px 30px;
+  border-radius: 25px;
+  background: $palette-orange;
+  color: $color-text__white;
+  font-weight: 600;
+  line-height: 19.5px;
 }

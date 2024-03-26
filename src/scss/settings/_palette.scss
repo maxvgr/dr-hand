@@ -1,15 +1,17 @@
 // Цветовая палитра блоков
 $palette-white: #ffffff;
 $palette-black: #000000;
+$palette-orange: rgba(245, 88, 0, 1);
 
 // Цветовая палитра текста
 $color-text__primary: #000000;
 $color-text__black: #000000;
 $color-text__white: #ffffff;
 $color-text__blue: rgba(0, 148, 147, 1);
+$color-text__orange: rgba(245, 88, 0, 1);
 
 
-$link-hover-color: rgba(0, 148, 147, 1) !default;
+$link-hover-color: rgba(245, 88, 0, 1) !default;
 
 body {
   color: $color-text__primary;
