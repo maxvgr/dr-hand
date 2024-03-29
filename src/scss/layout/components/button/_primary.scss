@@ -7,4 +7,10 @@
   color: $color-text__white;
   font-weight: 600;
   line-height: 19.5px;
+  white-space: nowrap;
+  transition: $transition-time ease;
+
+  &:hover {
+    background: rgba(214, 77, 0, 1);
+  }
 }

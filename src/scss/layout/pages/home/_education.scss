@@ -6,7 +6,77 @@
   // background: #009493;
 
   &-wrapper {
-    height: 500px;
-    padding-top: 60px;
+    // padding-top: 60px;
+
+    h2 {
+      padding-top: 59px;
+      padding-bottom: 25px;
+      font-weight: 700;
+      font-size: 40px;
+      font-family: $font-title;
+      line-height: 50px;
+    }
   }
+
+  &__items-wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    // padding-top: 24px;
+  }
+
+  &__item {
+    padding: 20px 25px;
+    border-radius: 25px;
+    background: $palette-white;
+
+    p {
+      padding-left: 60px;
+      color: $color-text__dark;
+      font-weight: $weight-Bold;
+      font-size: $font__text--big;
+      line-height: 25.2px;
+
+      span {
+        display: block;
+        padding-top: 10px;
+        color: $color-text__grey;
+        font-size: $font__text--regular;
+        line-height: 22px;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 45px;
+        height: 40px;
+        margin-left: -60px;
+        background-image: url("data:image/svg+xml,%3Csvg width='49' height='42' viewBox='0 0 49 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M34.3577 25.065L37.2846 23.9268V12.7073L34.3577 13.5203L46.878 9.29268L23.7886 1L2 9.29268L11.1057 12.4865M28.5041 15.3089L23.7886 16.935L11.1057 12.4865M11.1057 12.4865V23.9268L24.439 28.1545L28.5041 26.6911M23.7886 7.99187L31.5935 14.3333V35.6341M31.5935 35.6341L29.1545 37.9106L31.5935 41L34.3577 37.9106L31.5935 35.6341Z' stroke='%23007878'/%3E%3C/svg%3E");
+        background-position: center;
+        background-repeat: no-repeat;
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+      }
+
+    }
+  }
+
+  &__diploms-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  &__diploms-item {
+    border: 1px solid rgba(231, 231, 231, 1);
+    background: $palette-white;
+  }
+
+  .button-secondary {
+    display: flex;
+    width: 170px;
+    margin: 24px auto 45px;
+  }
+
 }

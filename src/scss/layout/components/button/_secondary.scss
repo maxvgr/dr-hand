@@ -1,0 +1,16 @@
+.button-secondary {
+  padding: 16px 30px;
+  border: 1px solid $palette-orange;
+  border-radius: 25px;
+  background: $palette-white;
+  color: $palette-orange;
+  font-weight: 600;
+  line-height: 19.5px;
+  white-space: nowrap;
+  transition: $transition-time ease;
+
+  &:hover {
+    background: $palette-orange;
+    color: $color-text__white;
+  }
+}
