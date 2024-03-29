@@ -4427,6 +4427,7 @@ __metadata:
     stylelint-order: "npm:^6.0.3"
     stylelint-webpack-plugin: "npm:^4.1.1"
     svgo: "npm:^3.1.0"
+    swiper: "npm:^11.1.0"
     vanilla-lazyload: "npm:^17.8.5"
     webpack: "npm:^5.89.0"
     webpack-cli: "npm:^5.1.4"
@@ -10233,6 +10234,13 @@ __metadata:
   bin:
     svgo: ./bin/svgo
   checksum: 28fa9061ccbcf2e3616d48d1feb613aaa05f8f290a329beb0e585914f1864385152934a7d4d683a4609fafbae3d51666633437c359c5c5ef74fb58ad09092a7c
+  languageName: node
+  linkType: hard
+
+"swiper@npm:^11.1.0":
+  version: 11.1.0
+  resolution: "swiper@npm:11.1.0"
+  checksum: dd144b3580146508f01b551ce4c5895d2d7f4fa49dd98f361ba549dcca17f440eff603669a5416f98d21ac9ce828c11c5eed966a96434b3fda101bc332714992
   languageName: node
   linkType: hard
 
