@@ -1,4 +1,6 @@
 .reviews {
+  padding-bottom: 40px;
+
   /* stylelint-disable-next-line selector-id-pattern */
   #pd_widget_big {
     max-width: 100% !important;
@@ -20,13 +22,7 @@
 
       .pd-widget-reviews__number-of-reviews {
         display: none;
-        // grid-area: 1/5;
-        // grid-row: 1/2;
       }
-
-      // .pd-widget-reviews__review {
-      //   grid-row: auto;
-      // }
     }
   }
 }
