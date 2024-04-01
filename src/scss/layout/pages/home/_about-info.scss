@@ -1,4 +1,9 @@
 .about-info {
+  @include breakpoint($breakpoint-notebook) {
+    background: url("../assets/images/global/bg-left.svg") left top no-repeat,
+    linear-gradient(180deg, #ffffff 18.87%, #009493 100%);
+  }
+
   position: relative;
   max-width: 1920px;
   padding: 0;
@@ -26,6 +31,12 @@
     -webkit-transition: 0.4s ease;
     -o-transition: 0.4s ease;
     transition: 0.4s ease;
+  }
+
+  .container {
+    @include breakpoint($breakpoint-notebook) {
+      max-width: 100%;
+    }
   }
 
   &-wrapper {

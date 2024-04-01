@@ -17,8 +17,11 @@
 
     .pd-widget-reviews {
       display: grid;
+      grid-template-rows: 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-auto-rows: 0;
       gap: 20px;
+      overflow-y: hidden;
 
       .pd-widget-reviews__number-of-reviews {
         display: none;
