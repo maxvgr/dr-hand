@@ -20,7 +20,7 @@
       grid-template-columns: repeat(5, auto);
     }
     @include breakpoint($breakpoint-mobile) {
-      grid-template-columns:  repeat(4, auto);;
+      grid-template-columns: repeat(4, auto);
     }
 
     display: grid;
@@ -42,29 +42,80 @@
       position: absolute;
       z-index: -10;
       right: -500px;
+      display: none;
       width: 0;
       opacity: 0;
     }
 
     padding-right: 40px;
     padding-left: 86px;
+  }
+
+  &__menu-mobile {
+    @include breakpoint($breakpoint-laptop) {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    right: -500px;
+    width: 0;
+    opacity: 0;
+
+    &--overlay {
+      position: fixed;
+      z-index: 20;
+      top: 0;
+      left: 0;
+      display: none;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.5);
+      // backdrop-filter: blur(1px);
+
+      &.is-active {
+        display: block;
+      }
+    }
 
     &.is-active {
       position: absolute;
       z-index: 20;
-      top: 80px;
+      top: 0;
       right: 0;
-      display: block;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
       width: auto;
-      padding: 20px;
-      background: $palette-white;
+      height: 100%;
+      padding: 65px 70px 50px 37px;
+      background: rgba(152, 232, 231, 1);
       opacity: 1;
       transition: 0.5s ease;
 
       .nav__list {
         flex-direction: column;
         gap: 10px;
+
+        a {
+          color: rgba(0, 103, 102, 1);
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 21.94px;
+        }
       }
+    }
+  }
+
+  &__feedback-mobile {
+    padding-top: 15px;
+  }
+
+  &__contacts-mobile {
+    a {
+      color: rgba(5, 66, 58, 1);
     }
   }
 
@@ -157,6 +208,7 @@
 
   &__burger {
     @include breakpoint($breakpoint-notebook) {
+      z-index: 30;
       display: block;
     }
 
@@ -175,7 +227,7 @@
     .hamburger.is-active .hamburger-inner,
     .hamburger.is-active .hamburger-inner::before,
     .hamburger.is-active .hamburger-inner::after {
-      background-color: $palette-orange;
+      background-color: $color-text__blue;
     }
   }
 }
