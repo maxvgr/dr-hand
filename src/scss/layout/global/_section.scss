@@ -20,6 +20,16 @@
   }
 
   h2 {
+    @include breakpoint($breakpoint-notebook) {
+      font-size: 32px !important;
+      line-height: 39px !important;
+    }
+    @include breakpoint($breakpoint-mobile) {
+      padding-top: 45px;
+      font-size: 24px !important;
+      line-height: 26px !important;
+    }
+
     padding-top: 59px;
     padding-bottom: 25px;
     font-weight: 700;

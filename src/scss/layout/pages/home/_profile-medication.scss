@@ -4,11 +4,29 @@
   border-radius: 70px;
   background: url("../assets/images/layout/section/profile-medication/bg.svg") center top 100px no-repeat rgba(233, 242, 242, 1);
 
+  .container {
+    @include breakpoint($breakpoint-laptop) {
+      max-width: 90%;
+    }
+  }
+
   h2 {
     padding-bottom: 0;
   }
 
   &-wrapper {
+    @include breakpoint($breakpoint-laptop) {
+      margin-top: 0;
+    }
+    @include breakpoint($breakpoint-notebook) {
+      grid-template-columns: 2fr 1fr;
+      align-items: start;
+    }
+    @include breakpoint($breakpoint-tablet) {
+      grid-template-columns: 1fr;
+      align-items: start;
+    }
+
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 33px;
@@ -17,6 +35,12 @@
 
     p {
       padding-top: 10px;
+    }
+  }
+
+  &__img {
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
     }
   }
 
@@ -67,10 +91,18 @@
     }
 
     .swiper-button-prev {
+      @include breakpoint($breakpoint-tablet) {
+        left: -30px;
+      }
+
       left: -50px;
     }
 
     .swiper-button-next {
+      @include breakpoint($breakpoint-tablet) {
+        right: -30px;
+      }
+
       right: -50px;
     }
   }

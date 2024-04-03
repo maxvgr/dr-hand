@@ -1,6 +1,12 @@
 .reviews {
   padding-bottom: 40px;
 
+  .container {
+    @include breakpoint($breakpoint-notebook) {
+      max-width: 100%;
+    }
+  }
+
   /* stylelint-disable-next-line selector-id-pattern */
   #pd_widget_big {
     max-width: 100% !important;
@@ -16,6 +22,16 @@
     }
 
     .pd-widget-reviews {
+      @include breakpoint($breakpoint-notebook) {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+      }
+      @include breakpoint($breakpoint-tablet) {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+      }
+
       display: grid;
       grid-template-rows: 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -25,6 +41,13 @@
 
       .pd-widget-reviews__number-of-reviews {
         display: none;
+      }
+
+      .pd-widget-reviews__review {
+        @include breakpoint($breakpoint-notebook) {
+          margin-right: 10px;
+          margin-left: 10px;
+        }
       }
     }
   }

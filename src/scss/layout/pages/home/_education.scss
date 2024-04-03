@@ -3,14 +3,24 @@
   border-radius: 70px 70px 0 0;
   background: linear-gradient(0deg, #ffffff 18.87%, #e9f2f2 100%);
 
-  // background: #009493;
+  .container {
+    @include breakpoint($breakpoint-tablet) {
+      max-width: 100%;
+    }
+  }
 
   &-wrapper {
     // padding-top: 60px;
-
   }
 
   &__items-wrap {
+    @include breakpoint($breakpoint-notebook) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include breakpoint($breakpoint-tablet) {
+      grid-template-columns: 1fr;
+    }
+
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 22px;
@@ -50,11 +60,17 @@
         -o-transition: 0.4s ease;
         transition: 0.4s ease;
       }
-
     }
   }
 
   &__diploms-wrapper {
+    @include breakpoint($breakpoint-notebook) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include breakpoint($breakpoint-tablet) {
+      grid-template-columns: 1fr;
+    }
+
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
@@ -70,5 +86,4 @@
     width: 170px;
     margin: 24px auto 45px;
   }
-
 }

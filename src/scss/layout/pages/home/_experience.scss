@@ -1,5 +1,16 @@
 .experience {
+  .container {
+    @include breakpoint($breakpoint-tablet) {
+      max-width: 100%;
+    }
+  }
+
   &__title {
+    @include breakpoint($breakpoint-notebook) {
+      font-size: 32px;
+      line-height: 39px;
+    }
+
     margin-top: 67px;
     margin-bottom: 23px;
     font-weight: 700;
@@ -8,6 +19,15 @@
   }
 
   &-wrapper {
+    @include breakpoint($breakpoint-notebook) {
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+    @include breakpoint($breakpoint-mobile) {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 18px;
@@ -18,7 +38,6 @@
     display: flex;
     gap: 16px;
     // align-items: center;
-
 
     p {
       flex: 1 80%;
@@ -37,7 +56,7 @@
 
     &::before {
       content: "";
-      width: 43px;
+      width: 45px;
       height: 54px;
       background-image: url("../assets/images/layout/section/experience/exp.png");
       background-position: center;

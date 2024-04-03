@@ -19,7 +19,7 @@ Fancybox.bind("[data-fancybox]", {
 new Swiper(".profile-medication .swiper", {
   modules: [Navigation, Autoplay],
 
-  slidesPerView: 4.8,
+  slidesPerView: 2,
   spaceBetween: 20,
   // loop: true,
 
@@ -30,16 +30,20 @@ new Swiper(".profile-medication .swiper", {
     disableOnInteraction: false,
   },
 
-  // breakpoints: {
-  //   768: {
-  //     slidesPerView: 4,
-  //     spaceBetween: 20
-  //   },
-  //   1400: {
-  //     slidesPerView: 4,
-  //     spaceBetween: 20
-  //   }
-  // },
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    1200: {
+      slidesPerView: 3.5,
+      spaceBetween: 20
+    },
+    1400: {
+      slidesPerView: 4.8,
+      spaceBetween: 20
+    }
+  },
 
   navigation: {
     nextEl: ".profile-medication .swiper-button-next",

@@ -5,7 +5,28 @@
   background: rgba(255, 139, 74, 1);
   color: $color-text__white;
 
+  .container {
+    @include breakpoint($breakpoint-notebook) {
+      max-width: 100%;
+    }
+  }
+
+  h2 {
+    @include breakpoint($breakpoint-mobile) {
+      padding-top: 45px !important;
+      text-align: center;
+    }
+
+  }
+
   &-wrapper {
+    @include breakpoint($breakpoint-notebook) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include breakpoint($breakpoint-tablet) {
+      grid-template-columns: 1fr;
+    }
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
@@ -17,7 +38,27 @@
       outline: none;
     }
 
+    input.tel {
+      @include breakpoint($breakpoint-notebook) {
+        grid-row: 2/3;
+        grid-column: 1/2;
+      }
+      @include breakpoint($breakpoint-tablet) {
+        grid-row: auto;
+        grid-column: auto;
+      }
+    }
+
     textarea {
+      @include breakpoint($breakpoint-notebook) {
+        grid-row: 2/3;
+        grid-column: 2/3;
+      }
+      @include breakpoint($breakpoint-tablet) {
+        grid-row: auto;
+        grid-column: auto;
+      }
+
       grid-column: 1/3;
       padding: 22px 44px;
       border: none;
@@ -27,6 +68,18 @@
   }
 
   &-btn {
+    @include breakpoint($breakpoint-notebook) {
+      grid-row: 3/4;
+      grid-column: 1/4;
+    }
+    @include breakpoint($breakpoint-tablet) {
+      grid-row: auto;
+      grid-column: auto;
+    }
+    @include breakpoint($breakpoint-mobile) {
+      flex-direction: column;
+    }
+
     display: flex;
     gap: 10px;
     align-items: center;
