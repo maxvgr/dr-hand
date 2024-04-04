@@ -167,10 +167,15 @@
       // right: -34px;
 
       display: flex;
+      align-items: center;
       justify-self: center;
       margin: 0 10px;
       border-radius: 20px;
       transition: 0.5s ease;
+
+      a {
+        width: 46px;
+      }
 
       &:hover {
         position: absolute;

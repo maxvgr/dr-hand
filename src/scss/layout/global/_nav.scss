@@ -8,6 +8,19 @@
     gap: 43px;
   }
 
+  &--breadcrumb {
+    .nav__list {
+      gap: 10px;
+    }
+
+    .nav__item:not(:first-child)::before {
+      content: "\2015";
+      padding-right: 6px;
+      color: rgba(0, 148, 147, 1);
+    }
+
+  }
+
   &__item {
     white-space: nowrap;
   }
@@ -15,15 +28,11 @@
   &__link {
   }
 
-
-
   &--header {
     .nav__item {
-
     }
 
     .nav__link {
-
     }
   }
 }

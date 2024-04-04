@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<include src="layout/global/head.html"></include>
+
+<body class="page">
+  <include src="layout/global/header.html"></include>
+
+  <main>
+    <div id="single-about" class="page__body">
+      <section class="about-info section">
+        <div class="about-info--bg"></div>
+        <!-- /.about-info--bg -->
+        <div class="container">
+          <div class="about-info-wrapper">
+            <div class="about-info__left">
+              <div class="page__breadcrumbs">
+                <nav class="nav nav--breadcrumb">
+                  <ol class="nav__list">
+                    <li class="nav__item">
+                      <a href="/" class="nav__link" title="Главная"><span>Главная</span></a>
+                    </li>
+                    <li class="nav__item">
+                      <span class="nav__link">О компании</span>
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <!-- /.page__breadcrumbs -->
+              <h1 class="about-info__left-title title-gradient">
+                О специалисте
+              </h1>
+              <p class="about-info__left-bold">
+                О себе<br>
+              </p>
+              <p class="about-info__left-text">
+                Меня зовут Беличенко Никита Александрович.<br><br>
+                Я травматолог ортопед из города Тверь. Закончил Тверской государственный медицинский университет, там же
+                ординатуру, аспирантуру.<br><br>
+                В сферу моих профессиональных интересов входит патология кисти, лучезапястного сустава, предплечья.
+                Травмы, последствия травм, заболевания. Их консервативное и оперативное лечение.
+              </p>
+
+              <a href="#" class="button-primary">Связаться</a>
+
+            </div>
+            <!-- /.about-info__left -->
+            <div class="about-info__right">
+              <picture class="lazy">
+                <img alt="" class="image image--cover lazy__item" data-src="assets/images/global/about.png">
+              </picture>
+            </div>
+            <!-- /.about-info__right -->
+          </div>
+          <!-- /.about-info-wrapper -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /section.about-info -->
+
+      <include src="layout/template/experience/experience.html"></include>
+
+
+      <section class="education section">
+        <div class="container">
+          <div class="education-wrapper">
+            <h2 class="education__title title-gradient">
+              Образование
+            </h2>
+
+            <div class="education-about-wrapper">
+              <include src="layout/template/education/education.html"></include>
+
+              <picture class="lazy">
+                <img alt="" class="image image--cover lazy__item" data-src="assets/images/layout/pages/about/education.jpg">
+              </picture>
+
+            </div>
+            <!-- /.education-about-wrapper -->
+
+            <include src="layout/template/diploms/diploms.html"></include>
+
+            <a href="" data-fancybox="diploms" class="button-secondary">Смотреть всё</a>
+          </div>
+          <!-- /.education-wrapper -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /section.education -->
+
+      <include src="layout/template/progress/progress.html"></include>
+
+      <include src="layout/template/consultation/consultation.html"></include>
+
+    </div>
+    <!-- /.page__body -->
+  </main>
+
+  <include src="layout/global/footer.html"></include>
+</body>
+
+</html>

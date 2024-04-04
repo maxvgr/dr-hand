@@ -37,4 +37,26 @@
     font-family: $font-title;
     line-height: 50px;
   }
+
+  .page__breadcrumbs {
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
+    }
+
+    position: relative;
+    z-index: 1;
+    padding-top: 40px;
+
+    span.nav__link {
+      color: rgba(87, 143, 143, 1);
+    }
+
+    a.nav__link {
+      color: rgba(0, 116, 115, 1);
+
+      &:hover {
+        color: $palette-orange;
+      }
+    }
+  }
 }
