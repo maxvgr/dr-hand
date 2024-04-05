@@ -27,20 +27,20 @@
 
     .swiper-button-prev,
     .swiper-button-next {
-      @include breakpoint($breakpoint-laptop) {
-        top: -150px;
-      }
-      @include breakpoint($breakpoint-notebook) {
-        top: -140px;
-      }
-      @include breakpoint($breakpoint-tablet) {
-        top: -120px;
-      }
-      @include breakpoint($breakpoint-mobile) {
-        top: -100px;
-      }
+      // @include breakpoint($breakpoint-laptop) {
+      //   top: -150px;
+      // }
+      // @include breakpoint($breakpoint-notebook) {
+      //   top: -140px;
+      // }
+      // @include breakpoint($breakpoint-tablet) {
+      //   top: -120px;
+      // }
+      // @include breakpoint($breakpoint-mobile) {
+      //   top: -100px;
+      // }
 
-      top: -170px;
+      top: 50%;
       color: $color-text__blue;
 
       &::after {

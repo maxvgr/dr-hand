@@ -72,6 +72,8 @@
   },
   "dependencies": {
     "@fancyapps/ui": "^5.0.35",
+    "accordion-js": "^3.3.4",
+    "accordionjs": "^2.1.2",
     "imask": "^7.4.0",
     "swiper": "^11.1.0",
     "vanilla-lazyload": "^17.8.5"

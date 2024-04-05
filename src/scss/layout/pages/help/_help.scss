@@ -1,4 +1,10 @@
 #single-help {
+  .container {
+    @include breakpoint($breakpoint-notebook) {
+     width: 90%;
+    }
+  }
+
   .about-info {
     @include breakpoint($breakpoint-notebook) {
       border-radius: 40px;
@@ -58,7 +64,7 @@
     @include breakpoint($breakpoint-notebook) {
       grid-template-columns: repeat(2, 1fr);
     }
-    @include breakpoint($breakpoint-notebook) {
+    @include breakpoint($breakpoint-mobile) {
       grid-template-columns: 1fr;
     }
 
@@ -128,6 +134,61 @@
       &:not(:first-child) {
         padding-top: 21px;
       }
+    }
+  }
+
+  .help-inter-wrapper {
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 19.04px;
+
+    ul {
+      padding-left: 25px;
+
+      li {
+        list-style: disc;
+      }
+    }
+
+    a {
+      position: relative;
+      text-decoration: underline;
+      cursor: pointer !important;
+      transition: $transition-time ease;
+
+      &:hover {
+        color: $color-text__orange;
+        text-decoration: none !important;
+      }
+    }
+
+    p {
+      padding: 5px 0;
+    }
+  }
+
+  .profile-medication__buttons {
+    margin-bottom: 67px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    // @include breakpoint($breakpoint-notebook) {
+    //   top: -90px;
+    //  }
+    //  @include breakpoint($breakpoint-tablet) {
+    //   top: -100px;
+    //  }
+    //  @include breakpoint($breakpoint-mobile) {
+    //   top: -100px;
+    //  }
+
+    top: 50%;
+    color: $color-text__blue;
+
+    &::after {
+      font-weight: 400;
+      font-size: 40px;
     }
   }
 }
