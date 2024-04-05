@@ -39,13 +39,16 @@
   }
 
   .page__breadcrumbs {
+    @include breakpoint($breakpoint-notebook) {
+      padding-top: 30px;
+    }
     @include breakpoint($breakpoint-tablet) {
       display: none;
     }
 
     position: relative;
     z-index: 1;
-    padding-top: 40px;
+    padding-top: 20px;
 
     span.nav__link {
       color: rgba(87, 143, 143, 1);

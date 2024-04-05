@@ -1,7 +1,9 @@
 #single-about {
   .about-info {
-    @include breakpoint($breakpoint-tablet) {
+    @include breakpoint($breakpoint-notebook) {
       border-radius: 40px;
+    }
+    @include breakpoint($breakpoint-tablet) {
       background: linear-gradient(0deg, #ffffff 42.71%, #009493 100%);
     }
 

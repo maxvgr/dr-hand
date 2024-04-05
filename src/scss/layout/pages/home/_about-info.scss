@@ -1,5 +1,6 @@
 .about-info {
   @include breakpoint($breakpoint-notebook) {
+    border-radius: 0 0 40px 40px;
     background: url("../assets/images/global/bg-left.svg") left top no-repeat,
       linear-gradient(180deg, #ffffff 18.87%, #009493 100%);
   }

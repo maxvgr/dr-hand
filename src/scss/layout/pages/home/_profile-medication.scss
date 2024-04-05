@@ -58,6 +58,17 @@
       border-radius: 25px;
       background: $palette-white;
       text-align: center;
+      transition: $transition-time ease;
+
+      &:hover {
+        .swiper-slide-title {
+          color: $color-text__orange;
+        }
+
+        p {
+          color: rgba(93, 115, 115, 1);
+        }
+      }
 
       &-title {
         padding-bottom: 10px;
