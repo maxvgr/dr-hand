@@ -1,65 +1,86 @@
-.error-wrap {
-  @include breakpoint($breakpoint-laptop) {
-    gap: 40px;
-  }
-  @include breakpoint($breakpoint-notebook) {
-    grid-template-columns: 1fr;
-    width: 80%;
-    margin: 0 auto;
-    padding-bottom: 50px;
-  }
-  @include breakpoint($breakpoint-tablet) {
-    width: 100%;
-  }
-
+.error-404 {
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 190px;
-  padding-bottom: 100px;
+}
 
-  .error__text {
-    color: rgba(86, 91, 102, 1);
-    font-weight: 700;
-    font-size: 18px;
-    font-family: $font-title;
-    line-height: 27px;
+.errors {
+  &-wrap {
+    @include breakpoint($breakpoint-laptop) {
+      gap: 40px;
+    }
+    @include breakpoint($breakpoint-notebook) {
+      grid-template-columns: 1fr;
+      width: 80%;
+      margin: 0 auto;
+      padding-bottom: 50px;
+    }
+    @include breakpoint($breakpoint-tablet) {
+      width: 100%;
+    }
 
-    h1 {
-      @include breakpoint($breakpoint-mobile) {
-        font-size: 50px;
-        line-height: 50px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 190px;
+    padding-bottom: 100px;
+
+    .errors__text {
+      color: rgba(86, 91, 102, 1);
+      font-weight: 700;
+      font-size: 18px;
+      font-family: $font-title;
+      line-height: 27px;
+
+      h1 {
+        @include breakpoint($breakpoint-mobile) {
+          font-size: 50px;
+          line-height: 50px;
+        }
+
+        font-weight: 700;
+        font-size: 140px;
+        line-height: 173.04px;
+        white-space: nowrap;
+
+        span {
+          font-size: 30px;
+          line-height: 37.08px;
+        }
       }
 
-      font-weight: 700;
-      font-size: 140px;
-      line-height: 173.04px;
-      white-space: nowrap;
+      a {
+        text-decoration: underline;
+        transition: $transition-time ease;
 
-      span {
-        font-size: 30px;
-        line-height: 37.08px;
+        &:hover {
+          text-decoration: none;
+        }
       }
     }
 
-    a {
-      text-decoration: underline;
-      transition: $transition-time ease;
-
-      &:hover {
-        text-decoration: none;
+    picture > img {
+      @include breakpoint($breakpoint-notebook) {
+        padding: 0 100px;
       }
+      @include breakpoint($breakpoint-mobile) {
+        padding: 0 10px;
+      }
+
+      padding: 56px 150px 0 50px;
     }
   }
 
-  picture > img {
-    @include breakpoint($breakpoint-notebook) {
-      padding: 0 100px;
-    }
-    @include breakpoint($breakpoint-mobile) {
-      padding: 0 10px;
+  &-border {
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
     }
 
-    padding: 56px 150px 0 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    .container {
+      border-bottom: 1px solid rgba(203, 203, 203, 1);
+    }
   }
 }
+

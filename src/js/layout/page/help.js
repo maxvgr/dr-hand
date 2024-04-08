@@ -16,7 +16,7 @@ Fancybox.bind("[data-fancybox]", {
 });
 
 if (document.querySelector('#single-help')) {
-  new Swiper(".about-info .swiper", {
+  new Swiper(".help .swiper", {
     modules: [Navigation, Autoplay],
 
     slidesPerView: 1.5,
@@ -50,8 +50,8 @@ if (document.querySelector('#single-help')) {
     },
 
     navigation: {
-      nextEl: ".about-info .swiper-button-next",
-      prevEl: ".about-info .swiper-button-prev",
+      nextEl: ".help .swiper-button-next",
+      prevEl: ".help .swiper-button-prev",
     },
 
   });

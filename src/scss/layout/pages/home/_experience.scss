@@ -1,4 +1,6 @@
 .experience {
+  background: none;
+
   .container {
     @include breakpoint($breakpoint-tablet) {
       max-width: 100%;

@@ -1,0 +1,30 @@
+.search {
+  h1 {
+    padding-bottom: 27px;
+  }
+
+  &-wrap {
+    position: relative;
+
+    span {
+      display: block;
+      padding-bottom: 10px;
+      font-weight: $weight-Bold;
+    }
+
+    p {
+      padding-bottom: 28px;
+
+      &:not(:last-child) {
+        margin-bottom: 28px;
+        border-bottom: 1px solid rgba(203, 203, 203, 1);
+      }
+    }
+
+    a {
+      display: block;
+      padding-top: 10px;
+      color: $palette-orange;
+    }
+  }
+}

@@ -6,10 +6,10 @@
 <body class="page">
   <include src="layout/global/header.html"></include>
 
-  <main>
-    <div id="single-contacts" class="page__body">
-      <section class="contacts section">
-        <div class="contacts--bg"></div>
+  <main class="error-404">
+    <div id="errors" class="page__body">
+      <section class="errors section">
+        <div class="section--bg"></div>
 
         <div class="container">
           <div class="page__breadcrumbs">
@@ -27,8 +27,8 @@
           <!-- /.page__breadcrumbs -->
 
 
-          <div class="error-wrap">
-            <div class="error__text">
+          <div class="errors-wrap">
+            <div class="errors__text">
               <h1 class="title-gradient">
                 404<span> ошибка</span>
               </h1>
@@ -39,20 +39,16 @@
                 data-src="assets/images/global/404.png">
             </picture>
           </div>
-
-
-
-
-
     </div>
     <!-- /.container -->
     </section>
-    <!-- /section.about-info -->
-
-    <include src="layout/template/consultation/consultation.html"></include>
 
     </div>
     <!-- /.page__body -->
+    <div class="errors-border">
+      <div class="container"></div>
+    </div>
+    <!-- /.error-border -->
   </main>
 
   <include src="layout/global/footer.html"></include>

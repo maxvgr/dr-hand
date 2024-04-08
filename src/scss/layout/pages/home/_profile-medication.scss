@@ -31,11 +31,23 @@
     grid-template-columns: 3fr 1fr;
     gap: 33px;
     align-items: end;
-    margin-top: -30px;
+    // margin-top: -30px;
+  }
 
+  &__info {
     p {
       padding-top: 10px;
     }
+
+    ul {
+      padding: 10px 0 0 25px;
+      list-style: disc;
+
+      li {
+        padding: 3px 0;
+      }
+    }
+
   }
 
   &__img {
