@@ -1,0 +1,97 @@
+.contacts {
+  @include breakpoint($breakpoint-notebook) {
+    border-radius: 40px;
+  }
+  @include breakpoint($breakpoint-tablet) {
+    border-radius: 40px;
+    background: linear-gradient(0deg, #ffffff 48.87%, #98e8e7 100%);
+  }
+
+  position: relative;
+  overflow: hidden;
+  max-width: 1920px;
+  padding: 0;
+  border-radius: 70px;
+  background: linear-gradient(0deg, #ffffff 48.87%, #98e8e7 100%);
+
+  .container {
+    @include breakpoint($breakpoint-notebook) {
+      max-width: 100%;
+    }
+  }
+
+  &--bg {
+    @include breakpoint($breakpoint-notebook) {
+      background-image: url("../assets/images/layout/pages/about/bg.jpg");
+      background-position: top 0 right 0;
+      background-size: cover;
+    }
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/images/global/bg-left.svg"), url("../assets/images/layout/pages/about/bg.jpg");
+    background-position: left 0 top -120px, top 0 right 0;
+    background-size: 20%, cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 20px 20px #ffffff inset;
+    opacity: 0.2;
+    transition: 0.4s ease;
+  }
+
+  h1 {
+    padding: 33px 0 12px;
+  }
+
+  &-wrapper {
+    @include breakpoint($breakpoint-tablet) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include breakpoint($breakpoint-mobile) {
+      grid-template-columns: 1fr;
+    }
+
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+    padding: 27px 0 69px;
+  }
+
+  &__left {
+    @include breakpoint($breakpoint-tablet) {
+      grid-row: 1/3;
+    }
+    @include breakpoint($breakpoint-mobile) {
+      grid-row: 1/2;
+    }
+
+    span {
+      display: block;
+      color: rgba(0, 129, 128, 1);
+
+      &:not(:first-child) {
+        padding-top: 26px;
+      }
+    }
+
+    p {
+        padding: 5px 0;
+    }
+  }
+
+  &__map {
+    img {
+      @include breakpoint($breakpoint-tablet) {
+        height: 190px;
+      }
+      @include breakpoint($breakpoint-mobile) {
+        height: 100%;
+      }
+
+    }
+
+  }
+}
