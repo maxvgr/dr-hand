@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<include src="layout/global/head.html"></include>
+
+<body class="page">
+  <include src="layout/global/header.html"></include>
+
+  <main>
+    <div id="single-contacts" class="page__body">
+      <section class="contacts section">
+        <div class="contacts--bg"></div>
+
+        <div class="container">
+          <div class="page__breadcrumbs">
+            <nav class="nav nav--breadcrumb">
+              <ol class="nav__list">
+                <li class="nav__item">
+                  <a href="/" class="nav__link" title="Главная"><span>Главная</span></a>
+                </li>
+                <li class="nav__item">
+                  <span class="nav__link">404</span>
+                </li>
+              </ol>
+            </nav>
+          </div>
+          <!-- /.page__breadcrumbs -->
+
+
+          <div class="error-wrap">
+            <div class="error__text">
+              <h1 class="title-gradient">
+                404<span> ошибка</span>
+              </h1>
+              Страница, на которую вы пытаетесь попасть, не существует или была удалена. Перейдите на <a href="/" class="link">главную</a> страницу
+            </div>
+            <picture class="lazy">
+              <img alt="" class="image image--cover lazy__item"
+                data-src="assets/images/global/404.png">
+            </picture>
+          </div>
+
+
+
+
+
+    </div>
+    <!-- /.container -->
+    </section>
+    <!-- /section.about-info -->
+
+    <include src="layout/template/consultation/consultation.html"></include>
+
+    </div>
+    <!-- /.page__body -->
+  </main>
+
+  <include src="layout/global/footer.html"></include>
+</body>
+
+</html>
