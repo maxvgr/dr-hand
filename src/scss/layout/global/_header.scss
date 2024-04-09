@@ -29,9 +29,19 @@
     place-items: center center;
   }
 
-  // &__logo {
+  &__logo {
+    img {
+      @include breakpoint($breakpoint-tablet) {
+        min-width: 200px;
+      }
+      @include breakpoint($breakpoint-mobile) {
+        min-width: 180px;
+      }
 
-  // }
+      min-width: 256px;
+      height: auto;
+    }
+  }
 
   &__menu {
     @include breakpoint($breakpoint-laptop) {
@@ -132,12 +142,22 @@
     @include breakpoint($breakpoint-tablet) {
       grid-row: 1/2;
       grid-column: 2/3;
+
+      strong {
+        display: inline-flex;
+        padding-bottom: 8px;
+      }
     }
     @include breakpoint($breakpoint-mobile) {
       grid-column: 3/4;
     }
 
     justify-self: center;
+
+    // strong {
+    //   display: inline-flex;
+    //   padding-bottom: 10px;
+    // }
 
     span {
       @include breakpoint($breakpoint-mobile) {

@@ -2,10 +2,12 @@
   @include breakpoint($breakpoint-notebook) {
     border-radius: 0 0 40px 40px;
     background: url("../assets/images/global/bg-left.svg") left top no-repeat,
-      linear-gradient(180deg, #ffffff 18.87%, #009493 100%);
+      linear-gradient(180deg, #ffffff 18.87%, rgba(152, 232, 231, 1) 100%);
+      // linear-gradient(180deg, #ffffff 18.87%, #009493 100%);
   }
   @include breakpoint($breakpoint-mobile) {
-    background: linear-gradient(180deg, #ffffff 18.87%, #009493 100%);
+    background: linear-gradient(180deg, #ffffff 18.87%, rgba(152, 232, 231, 1) 100%);
+    // background: linear-gradient(180deg, #ffffff 18.87%, #009493 100%);
   }
 
   position: relative;
@@ -15,7 +17,10 @@
   border-radius: 0 0 70px 70px;
   background: url("../assets/images/global/bg-left.svg") left top no-repeat,
     url("../assets/images/global/bg-right.svg") right 300px bottom -100px no-repeat,
-    linear-gradient(180deg, #ffffff 18.87%, #009493 100%);
+    linear-gradient(180deg, #ffffff 18.87%, rgba(152, 232, 231, 1));
+    // background: rgba(152, 232, 231, 1);
+
+
 
   &--bg {
     @include breakpoint($breakpoint-tablet) {
@@ -31,7 +36,7 @@
     background-position: top 0 right 0;
     background-repeat: no-repeat;
     box-shadow: 0 0 20px 20px #ffffff inset;
-    opacity: 0.3;
+    opacity: 0.6;
     -webkit-transition: 0.4s ease;
     -o-transition: 0.4s ease;
     transition: 0.4s ease;
@@ -62,20 +67,21 @@
 
     &-title {
       @include breakpoint($breakpoint-notebook) {
-        margin-top: 59px;
+        margin-top: 0;
         margin-bottom: 28px;
         font-weight: 700;
         font-size: 36px;
         line-height: 44px;
       }
       @include breakpoint($breakpoint-mobile) {
-        margin-top: 31px;
+        margin-top: 0;
         margin-bottom: 20px;
         font-size: 26px;
         line-height: 32px;
       }
 
-      margin-top: 87px;
+      z-index: 10;
+      margin-top: 0;
       margin-bottom: 46px;
       font-weight: $weight-Bold;
       font-size: 48px;

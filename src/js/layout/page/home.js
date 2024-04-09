@@ -93,3 +93,20 @@ new Swiper(".progress .swiper", {
 });
 
 
+const diplombtn = document.querySelector(".education__btn");
+const diplomclose = document.querySelector(".education__btn.closed");
+const diplomsgrid = document.querySelector(".education__diploms-wrapper");
+
+diplombtn.addEventListener("click", () => {
+  diplombtn.classList.toggle("is-active");
+  diplomsgrid.classList.toggle("is-active");
+  diplomclose.classList.toggle("is-active");
+});
+
+diplomclose.addEventListener("click", () => {
+  diplombtn.classList.toggle("is-active");
+  diplomsgrid.classList.toggle("is-active");
+  diplomclose.classList.toggle("is-active");
+});
+
+
