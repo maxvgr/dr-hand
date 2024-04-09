@@ -144,8 +144,7 @@
       grid-column: 2/3;
 
       strong {
-        display: inline-flex;
-        padding-bottom: 8px;
+        padding-bottom: 3px;
       }
     }
     @include breakpoint($breakpoint-mobile) {
@@ -153,11 +152,13 @@
     }
 
     justify-self: center;
+    line-height: 23.36px;
 
-    // strong {
-    //   display: inline-flex;
-    //   padding-bottom: 10px;
-    // }
+    strong {
+      display: inline-flex;
+      font-size: 18px;
+      line-height: 26.28px;
+    }
 
     span {
       @include breakpoint($breakpoint-mobile) {

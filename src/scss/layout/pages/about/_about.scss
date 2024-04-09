@@ -1,10 +1,13 @@
 #single-about {
-  .about-info {
+  .about {
     @include breakpoint($breakpoint-notebook) {
       border-radius: 40px;
     }
     @include breakpoint($breakpoint-tablet) {
-      background: linear-gradient(0deg, #ffffff 42.71%, #009493 100%);
+      background: linear-gradient(0deg, rgba(152, 232, 231, 0.21) 0%, #98e8e7 81.13%);
+    }
+    @include breakpoint($breakpoint-mobile) {
+      background: linear-gradient(0deg, rgba(152, 232, 231, 0.21) 0%, #98e8e7 81.13%);
     }
 
     position: relative;
@@ -12,26 +15,23 @@
     max-width: 1920px;
     padding: 0;
     border-radius: 70px;
-    background:
-      // url("../assets/images/global/bg-left.svg") left 1000px top 20px no-repeat,
-      // url("../assets/images/global/bg-right.svg") right 300px bottom -100px no-repeat,
-      linear-gradient(90deg, #ffffff 42.71%, #009493 100%);
+    background-image: url("../assets/images/layout/pages/about/bg-new.jpg");
+    background-position: top 0 right 0;
+    background-size: cover;
 
     &--bg {
+      @include breakpoint($breakpoint-laptop) {
+        background-position: bottom 0 right 80px;
+      }
       @include breakpoint($breakpoint-notebook) {
-        background-image: url("../assets/images/layout/pages/about/bg.jpg");
-        background-position: top 0 right 0;
-        background-size: cover;
+        background-position: bottom 0 right 0;
       }
       @include breakpoint($breakpoint-tablet) {
-        display: block;
-        background-image: url("../assets/images/global/about.png");
         background-position: bottom 0 right -50px;
-        background-size: 38%;
-        opacity: 1;
+        background-size: 250px auto;
       }
       @include breakpoint($breakpoint-mobile) {
-        background-size: 65%;
+        background-size: 210px auto;
       }
 
       position: absolute;
@@ -39,12 +39,10 @@
       right: 0;
       width: 100%;
       height: 100%;
-      background-image: url("../assets/images/global/bg-left.svg"), url("../assets/images/layout/pages/about/bg.jpg");
-      background-position: left 0 top -120px, top 0 right 0;
-      background-size: 20%, cover;
+      background-image: url("../assets/images/layout/pages/about/photo.png");
+      background-position: bottom 0 right 380px;
+      background-size: 300px auto;
       background-repeat: no-repeat;
-      box-shadow: none;
-      opacity: 0.3;
       transition: 0.4s ease;
     }
 
@@ -54,6 +52,8 @@
         height: auto;
       }
 
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       height: 570px;
     }
 
@@ -63,24 +63,23 @@
       }
 
       position: relative;
-      z-index: 10;
+      z-index: 20;
 
       &-title {
         @include breakpoint($breakpoint-notebook) {
-          margin-top: 33px;
           margin-bottom: 25px;
           font-weight: 700;
           font-size: 36px;
           line-height: 44px;
         }
         @include breakpoint($breakpoint-mobile) {
-          margin-top: 25px;
+          margin-top: 0;
           margin-bottom: 20px;
-          font-size: 26px;
+          font-size: 20px;
           line-height: 32px;
         }
 
-        margin-top: 33px;
+        margin-top: 0;
         margin-bottom: 26px;
         font-weight: $weight-Bold;
         font-size: 48px;
@@ -92,13 +91,27 @@
       }
 
       .button-primary {
-        @include breakpoint($breakpoint-mobile) {
-          display: inline-flex;
-          // justify-content: center;
-        }
+        // @include breakpoint($breakpoint-mobile) {
+        //   display: inline-flex;
+        // }
 
         position: relative;
         z-index: 10;
+        display: inline-flex;
+        margin-top: 25px;
+      }
+
+      &-bold {
+        padding-bottom: 26px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 34px;
+
+        span {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 27.2px;
+        }
       }
     }
 

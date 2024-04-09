@@ -8,12 +8,12 @@
 
   <main>
     <div id="single-about" class="page__body">
-      <section class="about-info section">
-        <div class="about-info--bg"></div>
+      <section class="about section">
+        <div class="about--bg"></div>
         <!-- /.about-info--bg -->
         <div class="container">
-          <div class="about-info-wrapper">
-            <div class="about-info__left">
+          <div class="about-wrapper">
+            <div class="about__left">
               <div class="page__breadcrumbs">
                 <nav class="nav nav--breadcrumb">
                   <ol class="nav__list">
@@ -27,13 +27,13 @@
                 </nav>
               </div>
               <!-- /.page__breadcrumbs -->
-              <h1 class="about-info__left-title title-gradient">
+              <h1 class="about__left-title title-gradient">
                 О специалисте
               </h1>
-              <p class="about-info__left-bold">
+              <p class="about__left-bold">
                 О себе<br>
               </p>
-              <p class="about-info__left-text">
+              <p class="about__left-text">
                 Меня зовут Беличенко Никита Александрович.<br><br>
                 Я травматолог ортопед из города Тверь. Закончил Тверской государственный медицинский университет, там же
                 ординатуру, аспирантуру.<br><br>
@@ -45,10 +45,10 @@
 
             </div>
             <!-- /.about-info__left -->
-            <div class="about-info__right">
-              <picture class="lazy">
+            <div class="about__right">
+              <!-- <picture class="lazy">
                 <img alt="" class="image image--cover lazy__item" data-src="assets/images/global/about.png">
-              </picture>
+              </picture> -->
             </div>
             <!-- /.about-info__right -->
           </div>
@@ -80,7 +80,8 @@
 
             <include src="layout/template/diploms/diploms.html"></include>
 
-            <a href="" data-fancybox="diploms" class="button-secondary">Смотреть всё</a>
+            <button class="education__btn open button-secondary">Смотреть всё</button>
+            <button class="education__btn closed button-secondary">Закрыть всё</button>
           </div>
           <!-- /.education-wrapper -->
         </div>
