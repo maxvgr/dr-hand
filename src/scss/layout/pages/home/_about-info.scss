@@ -20,8 +20,6 @@
     linear-gradient(180deg, #ffffff 18.87%, rgba(152, 232, 231, 1));
     // background: rgba(152, 232, 231, 1);
 
-
-
   &--bg {
     @include breakpoint($breakpoint-tablet) {
       display: none;
