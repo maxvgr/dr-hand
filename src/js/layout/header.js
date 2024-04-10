@@ -1,3 +1,6 @@
+import MicroModal from 'micromodal';
+// var MicroModal = require('micromodal');
+
 const hamburger = document.querySelector(".hamburger--spin");
 const mobileNavs = document.querySelector(".header__menu-mobile");
 const overlay = document.querySelector(".header__menu-mobile--overlay");
@@ -8,4 +11,4 @@ hamburger.addEventListener("click", () => {
   mobileNavs.classList.toggle("is-active");
   overlay.classList.toggle("is-active");
 });
-
+MicroModal.init();
