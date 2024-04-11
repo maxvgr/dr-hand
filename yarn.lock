@@ -1120,13 +1120,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"accordionjs@npm:^2.1.2":
-  version: 2.1.2
-  resolution: "accordionjs@npm:2.1.2"
-  checksum: 9f46ac1d008b065e19e35d7a113e1ac7e56f99cd5406687d1d10ede4a79236d43abbd9585f21c9f35d2663ebfeae9bd10667fa50dffe0181ab7f319f2d92eff8
-  languageName: node
-  linkType: hard
-
 "acorn-import-assertions@npm:^1.9.0":
   version: 1.9.0
   resolution: "acorn-import-assertions@npm:1.9.0"
@@ -4394,7 +4387,6 @@ __metadata:
     "@nurminen/html-beautify-webpack-plugin": "npm:^1.1.4"
     "@squoosh/lib": "npm:^0.5.3"
     accordion-js: "npm:^3.3.4"
-    accordionjs: "npm:^2.1.2"
     autoprefixer: "npm:^10.4.16"
     basic-ftp: "npm:^5.0.4"
     copy-webpack-plugin: "npm:^11.0.0"

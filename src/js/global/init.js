@@ -2,6 +2,11 @@
 
 import LazyLoad from 'vanilla-lazyload';
 
+import { Fancybox } from "@fancyapps/ui";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
+
+import MicroModal from 'micromodal';
+
 export const lazyImageController = new LazyLoad({
   elements_selector: '.lazy__item',
 
@@ -13,4 +18,10 @@ export const lazyImageController = new LazyLoad({
 
 export const lazyBackgroundController = new LazyLoad({
   elements_selector: '.lazy-bg',
+});
+
+MicroModal.init();
+
+Fancybox.bind("[data-fancybox]", {
+  // Your custom options
 });

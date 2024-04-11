@@ -25,7 +25,7 @@
       <!-- /.footer__contacts -->
 
       <div class="footer__social">
-        <a href="#" class="logo"><img alt="" src="assets/images/tg.png"></a>
+        <a href="#" class="logo" target="_blank"><img alt="" src="assets/images/tg.png"></a>
       </div>
       <!-- /.footer__social -->
 
@@ -56,12 +56,20 @@
         <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
       </header>
       <div class="modal__content" id="modal-1-content">
-        <form action="">
+        <form action="" data-form>
           <div class="modal__content-wrapper">
-            <input class="input text" type="name" placeholder="ФИО">
-            <input class="input mail" type="mail" placeholder="E-mail">
-            <input class="input tel" type="phone" placeholder="+7 (___) ___-__-__">
-            <textarea class="input" placeholder="Сообщение" rows="3"></textarea>
+            <div>
+              <input class="input text" type="name" placeholder="ФИО">
+            </div>
+            <div>
+              <input class="input mail" type="email" placeholder="E-mail">
+            </div>
+            <div>
+              <input class="input tel" type="tel" placeholder="+7 (___) ___-__-__">
+            </div>
+            <div>
+              <textarea class="input" placeholder="Сообщение" rows="3"></textarea>
+            </div>
             <p class="consultation-btn">
               Нажимая на кнопку Вы даете согласие на обработку ваших персональных данных и соглашаетесь с условиями персональной обработки данных
             </p>

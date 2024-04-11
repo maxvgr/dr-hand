@@ -205,7 +205,9 @@
         border: 1px solid rgba(210, 236, 236, 1);
 
         .header__search-input {
-          width: inherit;
+          // width: inherit;
+
+          width: 330px;
           padding: 16px 40px;
         }
       }

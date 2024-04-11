@@ -1,6 +1,3 @@
-import { Fancybox } from "@fancyapps/ui";
-import "@fancyapps/ui/dist/fancybox/fancybox.css";
-
 import Swiper from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -10,11 +7,6 @@ import {
   Autoplay,
   Mousewheel,
 } from "swiper/modules";
-
-Fancybox.bind("[data-fancybox]", {
-  // Your custom options
-});
-
 
 new Swiper(".profile-medication .swiper", {
   modules: [Navigation, Autoplay],
