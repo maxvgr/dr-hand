@@ -23,6 +23,10 @@
 
   &__item {
     white-space: nowrap;
+
+    a {
+      padding: 5px 0;
+    }
   }
 
   .current-menu-item {
