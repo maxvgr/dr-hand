@@ -1,0 +1,25 @@
+#single-help {
+  .case {
+    .help-inter-wrapper {
+      @include breakpoint($breakpoint-tablet) {
+        grid-template-columns: 1fr;
+
+        .help-inter__img {
+          order: -1;
+        }
+      }
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      // align-items: center;
+    }
+
+    &-item__sign {
+      padding-top: 20px;
+      font-size: 20px;
+      line-height: 27.2px;
+    }
+  }
+
+}
