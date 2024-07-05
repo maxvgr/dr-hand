@@ -50,7 +50,7 @@
     @include breakpoint($breakpoint-notebook) {
       grid-template-columns: 1fr 0.8fr;
     }
-    @include breakpoint($breakpoint-tablet) {
+    @include breakpoint($breakpoint-mobile) {
       grid-template-columns: 1fr;
     }
 
@@ -61,6 +61,10 @@
   &__left {
     @include breakpoint($breakpoint-notebook) {
       padding-bottom: 20px;
+    }
+    @include breakpoint($breakpoint-mobile) {
+      display: grid;
+      grid-template-columns: 0.7fr 1.3fr;
     }
 
     position: relative;
@@ -75,6 +79,8 @@
         line-height: 44px;
       }
       @include breakpoint($breakpoint-mobile) {
+        grid-row: 1/2;
+        grid-column: 1/3;
         margin-top: 0;
         margin-bottom: 20px;
         font-size: 26px;
@@ -89,26 +95,63 @@
     }
 
     &-bold {
+      @include breakpoint($breakpoint-mobile) {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        margin-right: -80px;
+        font-size: 20px;
+        line-height: 22px;
+      }
+
       padding-bottom: 26px;
       font-weight: 600;
       font-size: 20px;
       line-height: 34px;
 
       span {
+        @include breakpoint($breakpoint-mobile) {
+          display: flex;
+          padding-top: 20px;
+          font-size: 16px;
+          line-height: 18px;
+        }
+
         font-weight: 600;
         font-size: 16px;
         line-height: 27.2px;
       }
+
     }
 
     &-text {
+      @include breakpoint($breakpoint-mobile) {
+        grid-row: 4/5;
+        grid-column: 1/3;
+      }
+
       line-height: 22.4px;
+    }
+
+    &--photo {
+      @include breakpoint($breakpoint-mobile) {
+        display: block;
+        grid-row: 2/3;
+        grid-column: 2/3;
+        max-height: 350px;
+        margin: 0 0 -5px;
+      }
+
+      z-index: -1;
+      display: none;
     }
 
     .button-primary {
       @include breakpoint($breakpoint-mobile) {
         display: flex;
+        grid-row: 3/4;
+        grid-column: 1/3;
         justify-content: center;
+        margin: 0 0 20px;
       }
 
       display: inline-block;
@@ -120,7 +163,7 @@
     @include breakpoint($breakpoint-notebook) {
       align-self: end;
     }
-    @include breakpoint($breakpoint-tablet) {
+    @include breakpoint($breakpoint-mobile) {
       display: none;
     }
 
