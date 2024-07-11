@@ -64,10 +64,10 @@ if (document.querySelector('#single-help')) {
 
     speed: 2000,
 
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 2000,
+    //   disableOnInteraction: false,
+    // },
 
     breakpoints: {
       540: {
@@ -89,8 +89,8 @@ if (document.querySelector('#single-help')) {
     },
 
     navigation: {
-      nextEl: ".help .swiper-button-next",
-      prevEl: ".help .swiper-button-prev",
+      nextEl: ".case .swiper-button-next",
+      prevEl: ".case .swiper-button-prev",
     },
 
   });
