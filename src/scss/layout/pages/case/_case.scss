@@ -10,8 +10,8 @@
       }
 
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
+      grid-template-columns: 1fr;
+      // gap: 30px;
       // align-items: center;
     }
 
@@ -22,4 +22,25 @@
     }
   }
 
+  .swiper-slide {
+    @include breakpoint($breakpoint-notebook) {
+      height: auto;
+    }
+  }
+
+  .slide__video {
+    @include breakpoint($breakpoint-laptop) {
+      height: 243px;
+    }
+    @include breakpoint($breakpoint-notebook) {
+      height: calc(100% - 47px);
+    }
+
+    object-fit: cover;
+    width: 100%;
+    height: 267px;
+    max-height: 100%;
+
+    // aspect-ratio: 1 / 0.791;
+  }
 }
