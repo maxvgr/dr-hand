@@ -16,29 +16,30 @@
     }
 
     &-item__sign {
+      height: 27px;
       padding-top: 20px;
       font-size: 20px;
       line-height: 27.2px;
     }
   }
 
+
+
   .swiper-slide {
-    @include breakpoint($breakpoint-notebook) {
       height: auto;
-    }
   }
 
   .slide__video {
-    @include breakpoint($breakpoint-laptop) {
-      height: 243px;
-    }
-    @include breakpoint($breakpoint-notebook) {
-      height: calc(100% - 47px);
-    }
+    // @include breakpoint($breakpoint-laptop) {
+    //   height: 243px;
+    // }
+    // @include breakpoint($breakpoint-notebook) {
+    //   height: calc(100% - 47px);
+    // }
 
     object-fit: cover;
     width: 100%;
-    height: 267px;
+    height: calc(100% - 47px);
     max-height: 100%;
 
     // aspect-ratio: 1 / 0.791;
