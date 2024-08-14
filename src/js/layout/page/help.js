@@ -23,12 +23,12 @@ if (document.querySelector('#single-help')) {
     spaceBetween: 20,
     loop: true,
 
-    speed: 2000,
+    // speed: 2000,
 
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 2000,
+    //   disableOnInteraction: false,
+    // },
 
     breakpoints: {
       540: {
