@@ -41,8 +41,19 @@
       border: none;
       border-radius: 4px;
       outline: none;
+    }
 
-      &:nth-child(3) {
+    .input {
+      &:nth-child(4) {
+        @include breakpoint($breakpoint-notebook) {
+          grid-row: 2/3;
+          grid-column: 1/4;
+        }
+        @include breakpoint($breakpoint-tablet) {
+          grid-row: auto;
+          grid-column: auto;
+        }
+
         grid-column: 1/3;
       }
     }
