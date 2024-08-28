@@ -11,6 +11,22 @@
     padding: 33px 0 27px;
   }
 
+  h2 {
+    @include breakpoint($breakpoint-notebook) {
+      font-size: 28px !important;
+      line-height: 39px !important;
+    }
+    @include breakpoint($breakpoint-mobile) {
+      padding-top: 0;
+      font-size: 24px !important;
+      line-height: 26px !important;
+    }
+
+    padding: 0;
+    font-weight: 700;
+    font-size: 1.17em;
+  }
+
   .help-wrapper {
     @include breakpoint($breakpoint-notebook) {
       grid-template-columns: repeat(2, 1fr);
@@ -120,6 +136,12 @@
 
   .profile-medication__buttons {
     margin-bottom: 67px;
+  }
+
+  .swiper-slide-wrap {
+    & > picture {
+      height: 250px;
+    }
   }
 
   .swiper-button-prev,

@@ -23,10 +23,8 @@
     }
   }
 
-
-
   .swiper-slide {
-      height: auto;
+    height: auto;
   }
 
   .slide__video {
@@ -39,7 +37,9 @@
 
     object-fit: cover;
     width: 100%;
-    height: calc(100% - 47px);
+    // height: calc(100% - 47px);
+
+    height: 250px;
     max-height: 100%;
 
     // aspect-ratio: 1 / 0.791;

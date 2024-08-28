@@ -66,12 +66,15 @@
     }
 
     &-slide {
-      min-height: 210px;
-      padding: 26px 30px 21px;
-      border-radius: 25px;
-      background: $palette-white;
-      text-align: center;
-      transition: $transition-time ease;
+      &__wrapper {
+        min-height: 210px;
+        max-height: 210px;
+        padding: 26px 30px 21px;
+        border-radius: 25px;
+        background: $palette-white;
+        text-align: center;
+        transition: $transition-time ease;
+      }
 
       &:hover {
         .swiper-slide-title {

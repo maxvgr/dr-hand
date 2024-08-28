@@ -11,28 +11,28 @@ import {
 new Swiper(".profile-medication .swiper", {
   modules: [Navigation, Autoplay],
 
-  slidesPerView: 1.5,
+  slidesPerView: 1,
   spaceBetween: 20,
-  // loop: true,
-
+  // loop: false,
   speed: 2000,
 
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 5000,
+  //   disableOnInteraction: false,
+  // },
 
   breakpoints: {
     768: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 20
     },
     1200: {
-      slidesPerView: 3.5,
+      slidesPerView: 3,
       spaceBetween: 20
     },
     1400: {
-      slidesPerView: 4.8,
+      slidesPerView: 4,
+      // slidesPerGroup: 2,
       spaceBetween: 20
     }
   },
