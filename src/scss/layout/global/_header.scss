@@ -179,6 +179,10 @@
       }
     }
 
+    &--tel {
+      white-space: nowrap;
+    }
+
     &-phone {
       @include breakpoint($breakpoint-mobile) {
         display: block;
