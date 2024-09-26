@@ -1,4 +1,5 @@
-.dropdown-nav {
+.dropdown-nav,
+.menu-item-has-children {
   position: relative;
 
   @media (hover: hover) {
@@ -17,29 +18,30 @@
     }
   }
 
-  ul {
-    width: 100%;
-    min-width: 360px;
-
-    padding: 8px 0;
-
-    border-radius: $border-radius;
-    background-color: $palette-white;
-    transition: $transition-time ease;
-  }
+  // ul {
+  //   width: 100%;
+  //   min-width: 200px;
+  //   padding: 0;
+  //   border-radius: $border-radius;
+  //   background-color: $palette-white;
+  //   opacity: 0;
+  //   visibility: hidden;
+  //   transition: $transition-time ease;
+  // }
 
   & > a,
   & > span {
     display: flex;
     gap: 8px;
     align-items: center;
+    padding-top: 0;
 
     cursor: pointer;
 
-    &::before {
-      content: "";
-      position: absolute;
-    }
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    // }
 
     &::after {
       content: "";
@@ -58,9 +60,15 @@
 
   & > ul {
     position: absolute;
-    z-index: 3;
-    top: calc(100% + 16px);
-    left: 0;
+    z-index: 20;
+    // top: calc(100% + 16px);
+
+    top: 27px;
+    left: -20px;
+    width: 380px;
+    min-width: 180px;
+    max-width: 380px;
+    height: auto;
 
     background-color: $palette-white;
     box-shadow: 0 4px 6px 0 rgba(16, 73, 138, 0.2);
@@ -68,17 +76,21 @@
     opacity: 0;
     visibility: hidden;
 
-    &::before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: -20px;
-      left: 0;
-
-      display: block;
-      width: 100%;
-      height: 40px;
+    .nav__item {
+      white-space: wrap;
     }
+
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   z-index: -1;
+    //   top: -20px;
+    //   left: 0;
+
+    //   display: block;
+    //   width: 100%;
+    //   height: 40px;
+    // }
 
     a,
     span {
@@ -95,14 +107,14 @@
       }
     }
 
-    ul {
-      position: absolute;
-      top: 0;
-      left: calc(100% + 8px);
+    // ul {
+    //   position: absolute;
+    //   top: 0;
+    //   left: calc(100% + 8px);
 
-      opacity: 0;
-      visibility: hidden;
-    }
+    //   opacity: 0;
+    //   visibility: hidden;
+    // }
   }
 
   &__inner {

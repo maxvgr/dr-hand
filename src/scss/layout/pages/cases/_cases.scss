@@ -48,6 +48,10 @@
     }
   }
 
+  &__info {
+    line-height: 22px;
+  }
+
   &-items__wrapper {
     @include breakpoint($breakpoint-notebook) {
       grid-template-columns: repeat( 3, 1fr);
@@ -89,7 +93,7 @@
     padding: 0 10px;
     font-weight: 400;
     font-size: 16px;
-    line-height: 18.2px;
+    line-height: 22px;
     text-align: center;
   }
 
