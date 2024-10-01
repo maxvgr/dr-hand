@@ -1,4 +1,8 @@
 #single-help {
+  .education {
+    background:  none;
+  }
+
   .container {
     @include breakpoint($breakpoint-notebook) {
       width: 90%;
